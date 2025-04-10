@@ -8,7 +8,6 @@ int main()
     {
         int bispo = 1, torre, rainha = 1;
 
-
         printf("MOVIMENTO DAS PEÇAS DE XADREZ\n");
         printf("[1]. Bispo.\n");
         printf("[2]. Rainha.\n");
@@ -55,7 +54,7 @@ int main()
         {
             printf("Movimento do Cavalo.\n");
 
-            for (int cavalo1 = 0; cavalo1 <2; cavalo1++)
+            for (int cavalo1 = 0; cavalo1 < 2; cavalo1++)
             {
                 printf("Baixo.\n");
 
@@ -68,16 +67,16 @@ int main()
             }
             break;
         }
-        case 5: 
+        case 5:
         {
             printf("Saindo...\n");
         }
         break;
 
-        default: 
-        printf ("Opção invalida por favor tente novamente\n");
-    }
-        
+        default:
+            printf("Opção invalida por favor tente novamente\n");
+        }
+
     } while (opcao != 5);
 
     return 0;

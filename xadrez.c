@@ -13,7 +13,8 @@ int main()
         printf("[1]. Bispo.\n");
         printf("[2]. Rainha.\n");
         printf("[3]. Torre.\n");
-        printf("[4]. Sair.\n");
+        printf("[4]. Cavalo.\n");
+        printf("[5]. Cavalo\n");
         printf("Escolha qual peça deseja mover.\n");
         scanf("%d", &opcao);
 
@@ -50,7 +51,24 @@ int main()
             }
             break;
         }
-        case 4: 
+        case 4:
+        {
+            printf("Movimento do Cavalo.\n");
+
+            for (int cavalo1 = 0; cavalo1 <2; cavalo1++)
+            {
+                printf("Baixo.\n");
+
+                int cavalo2 = 0;
+                while (cavalo2 < 1 && cavalo1 == 1)
+                {
+                    printf("Esquerda.\n");
+                    cavalo2++;
+                }
+            }
+            break;
+        }
+        case 5: 
         {
             printf("Saindo...\n");
         }
@@ -60,7 +78,7 @@ int main()
         printf ("Opção invalida por favor tente novamente\n");
     }
         
-    } while (opcao != 4);
+    } while (opcao != 5);
 
     return 0;
 }
